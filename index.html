@@ -17,6 +17,9 @@ nav {
     background: #111;
     padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -27,7 +30,7 @@ nav a {
 }
 
 header {
-    background: #222;
+    background: #222 url('images/fondo.jpg') center/cover no-repeat;
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -44,6 +47,7 @@ section {
     padding: 25px;
     margin: 20px 0;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .gallery {
@@ -100,6 +104,7 @@ footer {
 <header id="inicio">
 <h1>Nombre del negocio</h1>
 <p>Profesionalidad, confianza y servicio de calidad</p>
+<!-- Botones demo -->
 <a class="button" href="#">Reservar cita</a>
 <a class="button" href="#">Comprar ahora</a>
 </header>
@@ -128,10 +133,10 @@ Contamos con experiencia, atención personalizada y materiales de calidad.
 <section id="galeria">
 <h2>Galería de trabajos</h2>
 <div class="gallery">
-<img src="https://via.placeholder.com/400x300" alt="Trabajo 1">
-<img src="https://via.placeholder.com/400x300" alt="Trabajo 2">
-<img src="https://via.placeholder.com/400x300" alt="Trabajo 3">
-<img src="https://via.placeholder.com/400x300" alt="Trabajo 4">
+<img src="images/foto1.jpg" alt="Trabajo 1">
+<img src="images/foto2.jpg" alt="Trabajo 2">
+<img src="images/foto3.jpg" alt="Trabajo 3">
+<img src="images/foto4.jpg" alt="Trabajo 4">
 </div>
 </section>
 
@@ -141,9 +146,11 @@ Contamos con experiencia, atención personalizada y materiales de calidad.
 <p><strong>Teléfono:</strong> 600 000 000</p>
 <p><strong>Dirección:</strong> Calle ejemplo, ciudad</p>
 
+<!-- Botones de contacto -->
 <a class="button" href="https://wa.me/34600000000">WhatsApp</a>
 <a class="button" href="mailto:correo@negocio.com">Enviar email</a>
 
+<!-- Redes sociales -->
 <div class="social">
 <p>Síguenos:</p>
 <a href="#">Instagram</a>

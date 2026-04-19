@@ -9,9 +9,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #0077b6, #00b894);
     color: #333;
-    .logo {
+}
+
+/* LOGO Y TEXTOS */
+.logo {
     max-width: 400px;
     display: block;
     margin: 0 auto 25px;
@@ -21,15 +24,17 @@ body {
 .subtitulo {
     font-size: 20px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .descripcion {
     font-size: 16px;
     opacity: 0.9;
     margin-bottom: 25px;
-
+    color: white;
 }
 
+/* NAV */
 nav {
     background: linear-gradient(90deg, #0077b6, #00b894);
     padding: 15px;
@@ -37,7 +42,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    
 }
 
 nav a {
@@ -47,10 +51,13 @@ nav a {
     font-weight: bold;
 }
 
+/* HEADER */
 header {
-    background: linear-gradient(135deg, #0077b6, #00b894);
+    text-align: center;
+    padding: 100px 20px;
 }
 
+/* SECCIONES */
 section {
     padding: 50px 20px;
     max-width: 1000px;
@@ -65,6 +72,7 @@ section {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* GALERÍA */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -76,9 +84,10 @@ section {
     border-radius: 8px;
 }
 
+/* BOTONES */
 .button {
     display: inline-block;
-    background: #111;
+    background: #0077b6;
     color: white;
     padding: 12px 20px;
     margin: 10px 5px;
@@ -86,6 +95,12 @@ section {
     border-radius: 5px;
 }
 
+.button:hover {
+    background: #00b894;
+    transition: 0.3s;
+}
+
+/* REDES */
 .social {
     text-align: center;
     margin-top: 20px;
@@ -97,8 +112,9 @@ section {
     font-size: 18px;
 }
 
+/* FOOTER */
 footer {
-    background: #111;
+    background: #0077b6;
     color: white;
     text-align: center;
     padding: 30px 20px;
@@ -120,11 +136,11 @@ footer {
 <img src="images/logo.png" alt="ALMUTEL" class="logo">
 
 <p class="subtitulo">
-Contratos de Telecomunicaciones, Energía y Seguridad para tu hogar o empresa
+Ahorra en luz, internet y seguridad sin complicaciones
 </p>
 
 <p class="descripcion">
-Profesionalidad, confianza y ahorro con nuestros servicios de calidad
+Te asesoramos y gestionamos todo para que pagues menos cada mes
 </p>
 
 <a class="button" href="#">Reservar cita</a>
@@ -135,10 +151,9 @@ Profesionalidad, confianza y ahorro con nuestros servicios de calidad
 <div class="card">
 <h2>Acerca de nosotros</h2>
 <p>
-Somos un negocio local dedicado a ofrecer soluciones tecnologicas profesionales a nuestros clientes economizando sus facturas.
-Atención personalizada y materiales de calidad.
+Somos un negocio local dedicado a ofrecer soluciones tecnológicas profesionales optimizando tus facturas.
+Atención personalizada y servicio de calidad.
 </p>
-    
 </div>
 </section>
 
@@ -147,10 +162,9 @@ Atención personalizada y materiales de calidad.
 <h2>Servicios</h2>
 <ul>
 <li>Asesor técnico</li>
-<li>Contratacion de servicios</li>
-<li>Seguridad ,energia telecomunicaciones</li>
-<li>Instalación CCTV cámara vigilancia 
-    sin cuota mensual</li>  
+<li>Contratación de servicios</li>
+<li>Seguridad, energía y telecomunicaciones</li>
+<li>Instalación CCTV sin cuotas mensuales</li>
 </ul>
 </div>
 </section>
@@ -158,10 +172,10 @@ Atención personalizada y materiales de calidad.
 <section id="galeria">
 <h2>Galería de trabajos</h2>
 <div class="gallery">
-<img src="images/foto1.jpg" alt="Trabajo 1">
-<img src="images/foto2.jpg" alt="Trabajo 2">
-<img src="images/foto3.jpg" alt="Trabajo 3">
-<img src="images/foto4.jpg" alt="Trabajo 4">
+<img src="images/foto1.jpg">
+<img src="images/foto2.jpg">
+<img src="images/foto3.jpg">
+<img src="images/foto4.jpg">
 </div>
 </section>
 
@@ -171,11 +185,9 @@ Atención personalizada y materiales de calidad.
 <p><strong>Teléfono:</strong> 624419642</p>
 <p><strong>Dirección:</strong> Almuñécar Granada</p>
 
-<!-- Botones de contacto -->
-<a class="button" href="https://wa.me/34624419642">WhatsApp</a>
+<a class="button" href="https://wa.me/34624419642?text=Hola%20quiero%20información">WhatsApp</a>
 <a class="button" href="mailto:almutel@almutel.es">Enviar email</a>
 
-<!-- Redes sociales -->
 <div class="social">
 <p>Síguenos:</p>
 <a href="#">Instagram</a>

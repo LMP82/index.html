@@ -21,6 +21,10 @@
 .call-btn:hover {
     background: #005f8a;
 }  
+<a href="https://wa.me/34624419642?text=Hola%20quiero%20información" class="whatsapp-float" target="_blank">
+    <span>Contáctanos</span>
+    <img src="images/whatsapp.png" alt="WhatsApp">
+</a>  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -134,7 +138,32 @@ footer {
     text-align: center;
     padding: 30px 20px;
 }
-</style>
+</style>.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-float img {
+    width: 28px;
+    height: 28px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 </head>
 
 <body>
